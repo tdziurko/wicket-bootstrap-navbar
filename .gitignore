@@ -1,0 +1,15 @@
+tmp
+temp
+log
+target
+.classpath
+.project
+.settings
+*~
+*.iml
+*.ipr
+*.iws
+.idea
+
+# Mac specific
+.DS_Store
