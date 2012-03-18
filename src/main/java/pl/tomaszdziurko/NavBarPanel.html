@@ -2,18 +2,40 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns:wicket>
 	<body>
-
         <wicket:panel>
+            <div class="navbar navbar-fixed-top">
+                <div class="navbar-inner">
+                    <div class="container">
+                        <a class="brand" wicket:id="homePage">Example Web App</a>
 
-            <a wicket:id="homePage">Home</a>&nbsp;
-            <a wicket:id="clientsPage">Clients</a>&nbsp;
-            <a wicket:id="productOnePage">Product One</a>&nbsp;
-            <a wicket:id="productTwoPage">Product Two</a>&nbsp;
-            <a wicket:id="productThreePage">Product Three</a>&nbsp;
-            <a wicket:id="teamPage">Team</a>&nbsp;
-            <a wicket:id="skillsPage">Our Skills</a>&nbsp;
-            <a wicket:id="contactPage">Contact</a>&nbsp;
-
+                        <div class="nav-collapse">
+                            <ul class="nav">
+                                <li>
+                                    <a wicket:id="clientsPage">Clients</a>
+                                </li>
+                                <li>
+                                    <a wicket:id="productOnePage">Product One</a>
+                                </li>
+                                <li>
+                                    <a wicket:id="productTwoPage">Product Two</a>
+                                </li>
+                                <li>
+                                    <a wicket:id="productThreePage">Product Three</a>
+                                </li>
+                                <li>
+                                    <a wicket:id="teamPage">Team</a>
+                                </li>
+                                <li>
+                                    <a wicket:id="skillsPage">Our Skills</a>
+                                </li>
+                                <li>
+                                    <a wicket:id="contactPage">Contact</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </wicket:panel>
 	</body>
 </html>

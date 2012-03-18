@@ -27,6 +27,14 @@ public class WicketApplication extends WebApplication {
         mountPage("skills", OurSkillsPage.class);
         mountPage("contact", ContactPage.class);
 
-        super.init();
+        getMarkupSettings().setStripWicketTags(true);
+        setExternalHtmlDirIfSystemPropertyIsPresent();
+    }
+
+    private void setExternalHtmlDirIfSystemPropertyIsPresent() {
+        String externalDir = System.getProperty("wicket.html.dir");
+        if (externalDir != null) {
+            getResourceSettings().addResourceFolder(externalDir);
+        }
     }
 }
