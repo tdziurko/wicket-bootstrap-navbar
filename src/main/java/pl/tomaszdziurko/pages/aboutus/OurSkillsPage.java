@@ -1,11 +1,12 @@
 package pl.tomaszdziurko.pages.aboutus;
 
 import pl.tomaszdziurko.BasePage;
+import pl.tomaszdziurko.MenuItemEnum;
 
 public class OurSkillsPage extends BasePage {
-	private static final long serialVersionUID = 1L;
 
-    public OurSkillsPage() {
-
+    @Override
+    public MenuItemEnum getActiveMenu() {
+        return MenuItemEnum.ABOUT_US;
     }
 }

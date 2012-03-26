@@ -1,11 +1,12 @@
 package pl.tomaszdziurko.pages.clients;
 
 import pl.tomaszdziurko.BasePage;
+import pl.tomaszdziurko.MenuItemEnum;
 
 public class ClientsPage extends BasePage {
-	private static final long serialVersionUID = 1L;
 
-    public ClientsPage() {
-
+    @Override
+    public MenuItemEnum getActiveMenu() {
+        return MenuItemEnum.CLIENTS;
     }
 }

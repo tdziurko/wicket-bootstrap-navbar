@@ -1,11 +1,12 @@
 package pl.tomaszdziurko.pages.products;
 
 import pl.tomaszdziurko.BasePage;
+import pl.tomaszdziurko.MenuItemEnum;
 
 public class ProductThreePage extends BasePage {
-	private static final long serialVersionUID = 1L;
 
-    public ProductThreePage() {
-
+    @Override
+    public MenuItemEnum getActiveMenu() {
+        return MenuItemEnum.PRODUCTS;
     }
 }

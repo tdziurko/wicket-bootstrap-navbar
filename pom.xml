@@ -41,6 +41,13 @@
 			<version>1.2.16</version>
 		</dependency>
 
+        <!-- OTHER -->
+        <dependency>
+            <groupId>com.google.guava</groupId>
+            <artifactId>guava</artifactId>
+            <version>11.0.2</version>
+        </dependency>
+
 		<!--  JUNIT DEPENDENCY FOR TESTING -->
 		<dependency>
 			<groupId>junit</groupId>
@@ -56,7 +63,7 @@
 			<version>${jetty.version}</version>
 			<scope>provided</scope>
 		</dependency>
-	</dependencies>
+    </dependencies>
 	<build>
 		<resources>
 			<resource>
