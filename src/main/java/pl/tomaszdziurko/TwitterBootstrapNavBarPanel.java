@@ -14,9 +14,9 @@ import org.apache.wicket.model.Model;
 import java.io.Serializable;
 import java.util.Collection;
 
-public class NavBarPanel extends Panel {
+public class TwitterBootstrapNavBarPanel extends Panel {
 
-    private NavBarPanel(final Builder builder) {
+    private TwitterBootstrapNavBarPanel(final Builder builder) {
         super(builder.id);
 
         BookmarkablePageLink<Void> homePageLink = new BookmarkablePageLink<Void>("homePageLink", builder.homePage);
@@ -77,8 +77,8 @@ public class NavBarPanel extends Panel {
             return this;
         }
 
-        public NavBarPanel build() {
-            return new NavBarPanel(this);
+        public TwitterBootstrapNavBarPanel build() {
+            return new TwitterBootstrapNavBarPanel(this);
         }
     }
 }
